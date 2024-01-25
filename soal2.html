@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let gddmmyyyynn = 22505197803;
+        let golongan =  Math.floor(gddmmyyyynn/100000000000%10)
+        let tanggal = Math.floor(gddmmyyyynn/100000000%100)
+        let bulan = Math.floor(gddmmyyyynn/1000000%100)
+        let tahun = Math.floor(gddmmyyyynn/100%10000)
+        let kodeiden = Math.floor(gddmmyyyynn%100)
+        switch (bulan) {
+            case 1 :
+                bulan = "Januari"
+                break;
+            case 2 :
+                bulan = "Febuari"
+                break;
+            case 3 :
+                bulan = "Maret"
+                break;
+            case 4 :
+                bulan = "April"
+                break;
+            case 5 :
+                bulan = "Mei"
+                break;
+            case 6 :
+                bulan = "Juni"
+                break;
+            case 7 :
+                bulan = "Juli"
+                break;
+            case 8 :
+                bulan = "Agustus"
+                break;
+            case 9 :
+                bulan = "September"
+                break;
+            case 10 :
+                bulan = "Oktober"
+                break;
+            case 11 :
+                bulan = "November"
+                break;
+            case 12 :
+                bulan = "Desember"
+                break;
+        }
+
+          document.write ("No. golongan :"+ golongan,"</br>",
+         "tanggal lahir : " + tanggal ,"</br>", "Bulan : " + bulan,"</br>",
+         "Tahun : " + tahun,"</br>", "Kode identitas : " + kodeiden)
+    </script>
+</body>
+</html>
